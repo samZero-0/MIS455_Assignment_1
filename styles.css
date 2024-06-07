@@ -1,0 +1,493 @@
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f4f4;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(11, 6, 40);
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(11, 6, 40);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo {
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav .logo h1 {
+    margin: 0;
+    font-size: 24px;
+    letter-spacing: 2px;
+    color: white;
+}
+
+nav .logo p {
+    margin: 0;
+    font-size: 12px;
+    color: rgb(229, 217, 217);
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #abb0ec;
+}
+
+
+header {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.header-image {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: black;
+}
+
+.header-content h2 {
+    font-size: 24px;
+    letter-spacing: 3px;
+}
+
+.header-content h1 {
+    font-size: 80px;
+    margin: 10px 0;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 5px;
+    color: rgb(0, 0, 0);
+}
+
+.header-content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: black;
+    font-weight: bolder;
+}
+
+.header-content .button {
+    background-color: black;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.header-content .button:hover {
+    background-color: #333;
+}
+
+
+main {
+    padding: 40px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+main p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: rgb(60, 60, 60);
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(11, 6, 40);
+    color: white;
+  
+    width: 100%;
+    bottom: 0;
+}
+
+.gameList{
+    display: flex;
+    
+    flex-direction: column;
+
+    
+}
+   
+.store{
+        border: 2px solid rgb(0, 0, 0);
+        background-color: rgb(35, 35, 99);
+        box-shadow: 4px 6px 3px grey;
+        margin: 15px;
+       
+        border-radius: 10px;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        font-size: 2rem;
+        justify-content: space-between;
+        
+        
+       
+        
+
+}
+
+.platform{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+   
+
+}
+
+
+.store img {
+    margin-right: 10px; 
+    border-radius: 10px; 
+}
+
+.genre{
+    font-size: small;
+    font-style: italic;
+}
+
+.purchase{
+    color: rgb(53, 255, 35);
+    
+    font-size: 1rem;
+    padding-left: 780px;
+    padding-bottom: 50px;
+    
+}
+
+.buyButton{
+    background-color: #c2fbd7;
+    border-radius: 100px;
+    box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+    color: green;
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 1.5rem;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.buyButton:hover {
+    box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+  }
+
+
+.community{
+    display: flex;
+    border: 5px solid black;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    justify-content: center;
+    width: 35%;
+    height: 35%;
+    margin-left:470px;
+    
+   
+    color: white;
+}
+
+
+.loginHub{
+    
+    
+    font-size:medium;
+  
+    flex-direction: row;
+
+}
+
+.popular{
+    background-color: rgb(255, 255, 255);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.kk{
+    
+    text-align: center;
+}
+
+.review{
+    display: flex;
+    
+    margin-left: 10px;
+    justify-content: space-around;
+}
+.item1{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    border-radius: 8px;
+    flex:50%;
+    background: url(got.jpg) ;
+    background-size: cover;
+    font-weight: 800;
+    color: #f4f4f4;
+    
+}
+.item2{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    border-radius: 8px;
+    flex:50%;
+    background: url(destiny.jpg) ;
+    background-size: cover;
+    font-weight: 800;
+    color: #f4f4f4;
+    
+}
+.item3{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    border-radius: 8px;
+    flex:50%;
+    background: url(f1.jpg) ;
+    background-size: cover;
+    font-weight: 800;
+    color: #f4f4f4;
+    
+}
+.revtext{
+    padding-left: 20px;
+}
+
+.title{
+    font-size: larger;
+    font-weight: 400;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.kanit-medium {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+.reviewBody{
+    font-size:1rem;
+    font-weight: 500;
+    font-family: kanit-medium;
+    
+}
+
+.hlink{
+    text-decoration: none;
+    color: aquamarine;
+}
+
+.signbtn{
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #28a745;
+    color: white;
+}
+
+.support-header {
+    
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.support-header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.search-bar {
+    margin-top: 20px;
+    padding: 10px;
+    width: 80%;
+    max-width: 500px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+.support-content {
+    background-color: #fff;
+    padding: 40px 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
+
+@media (min-width: 768px) {
+    .support-content {
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+.support-content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.contact p {
+    font-size: 16px;
+}
+
+.contact a {
+    color: #2a475e;
+    text-decoration: none;
+}
+
+.accessGames{
+   display: flex;
+   justify-content: center;
+   border: 2px solid black;
+   width:50%;
+   margin-left: 330px;
+   margin-bottom: 20px;
+  
+   background-color: #ffffff; 
+    border-style: groove;
+   box-shadow: 0 4px 8px rgba(241, 225, 225, 0.1); 
+   padding: 20px; 
+   color: #333333; 
+}
+
+.abtTitle{
+    font-size: large;
+    font-weight: 800;
+    
+}
+
+.about{
+    background: url(3408105.jpg) no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.9;
+}
+
+.abtHead{
+    color: white;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.abtPara{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.page3{
+    background: url(vecteezy_abstract-background-design-background-texture-design-with_18752866-1.jpg) no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.9;
+}
+
+.accessGames1{
+    display: flex;
+    justify-content: center;
+    width:50%;
+    margin-left: 330px;
+    margin-bottom: 20px;
+    padding: 20px; 
+    color: #ffffff;
+    background: url(bgGame.jpg) ;
+    background-size: cover;
+    font-weight: 600;
+    
+    
+    
+ }
+
+ .bStor{
+    text-decoration: none;
+    font-weight: 500;
+    color: #5a97ff;
+ }
+
+ 
+.page2{
+    background: url(comBG.webp) no-repeat center center fixed;
+    background-size: cover;
+    
+}
+
+.comTitle{
+    color: white;
+}
+.comDesc{
+    color: white;
+}
